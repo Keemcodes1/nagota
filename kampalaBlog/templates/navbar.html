@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+ <!-- ***** Header Area Start ***** -->
+{% block content %}
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="{% url 'index' %}" class="logo">
+                            <img src="{% static 'images/logo-removebg-preview.png' %}" alt="NAGOTA MOTORS">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="{% url 'index' %}" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'about' %}">About</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'products' %}">Available Stock</a></li>
+                            <li class="scroll-to-section"><a href="{% url 'contact' %}">Contact Us</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">More</a>
+                                <ul>
+                                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                                    <li><a href="{% url 'single_product' %}">Single Product</a></li>
+                                </ul>
+                            </li>
+                                
+                                     
+                                <a class='menu-trigger'>
+                                    <span>Menu</span>
+                                </a>
+                                <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+                            <!-- ***** Header Area End ***** -->
+
+                            
+{% endblock %}
